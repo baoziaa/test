@@ -1,0 +1,341 @@
+.header{
+	position: fixed;
+	top: 0px;
+	z-index: 9;
+}
+.header,
+.footer{
+	width: 100%;
+	height: 80px;
+	text-align: center;
+	background: #07cbc9;
+}
+.header .logo img{
+	width: 300px;
+	height: 46px;
+	margin-top:17px;
+	margin-left: 120px;
+	display: block;
+	cursor:pointer;
+}
+.header .logo{
+	float: left;
+}
+.header .nav_list{
+	float: right;
+}
+.header .nav_list ul{
+	list-style: none;
+	margin-right: 80px;
+}
+.header .nav_list ul li{
+	float: left;
+	/* width: 80px; */
+	padding:0 15px;
+	height: 80px;
+	line-height: 80px;
+	font-size: 15px;
+	font-weight: bold;
+	color:#ffffff;
+	/* margin: 0 8px; */
+	/* cursor:pointer; */
+}
+/*无下划线 */
+a{
+	text-decoration: none;
+	color:#fff;
+}
+/* 鼠标经过相应导航时，背景颜色发生变化 */
+.header .nav_list ul li:hover{
+	/* background-color:#FF3300; */
+	background-color:#000;
+}
+/* 清除浮动带来的塌陷效果 */
+.clear{
+	clear: both;
+}
+#clear1{
+	width: 0px;
+	height:0px;
+}
+.container{
+	margin-top:60px;
+}
+/* banner图 */
+.container .banner{
+	width: 100%;
+	height:600px;
+}
+.container .banner img{
+	width: 100%;
+	height: 600px;
+}
+/* 遮罩层 */
+.container .topLayer{
+	position: absolute;
+	width: 100%;
+	height:600px;
+	top:60px;
+	left:0px;
+	background: #000;
+	opacity: 0.5;
+}
+.container .topLayer_top{
+	width: 538px;
+	height:400px;
+	position: absolute;
+	top:360px;
+	left:50%;
+	margin-top:-180px;
+	margin-left:-269px;
+	z-index: 2;
+}
+/* 文本框 */
+input[type="text"]{
+	width: 505px;
+	height: 39px;
+	color: #999999;
+	padding-left:5px;
+	border-radius:1px;
+	background: transparent;
+	border: 2px solid #999999;
+}
+/* 提交按钮 */
+input[type="submit"]{
+	width: 123px;
+	height:39px;
+	color:#999999;
+	border-radius:1px;
+	font-weight: bold;
+	background: transparent;
+	border: 2px solid #999999;
+}
+input[type="text"]:hover{
+	border: 2px solid #07cbc9;
+}
+input[type="submit"]:hover{
+	border:none;
+	background: #07cbc9;
+}
+/* 文本框输入时背景透明 */
+input:focus,
+textarea:focus{
+	background: transparent;
+}
+textarea{
+	width: 505px;
+	height: 115px;
+	color: #999999;
+	padding-left:5px;
+	border-radius:1px;
+	background: transparent;
+	border: 2px solid #999999;
+}
+textarea:hover{
+	border: 2px solid #07cbc9;
+}
+/* placeholder文字颜色 */
+input::-webkit-input-placeholder,
+#textarea_content::-webkit-input-placeholder{
+	color:#999999;
+}
+.about .about_content,
+.gallery .gallery_content{
+	width:1200px;
+	height:700px;
+	margin: 0 auto;
+}
+.gallery .gallery_content{
+	height:950px;
+}
+.about .about_content .about_top,
+.gallery .gallery_content .gallery_top{
+	text-align: center;
+	padding-top:50px;
+}
+hr{
+	width: 40px;
+	margin: 3px;
+	border: 2px solid #07cbc9;
+	margin: 10px auto;
+}
+.about .about_content .about_top p,
+.gallery .gallery_content .gallery_top p{
+	font-size:15px;
+	height:25px;
+	line-height:25px;
+	color:#999999;
+}
+.about .about_content .about_middle{
+	width: 1200px;
+	height: 500px;
+	position: relative;
+}
+.about .about_content .about_middle img{
+	width: 568px;
+	height: 380px;
+	padding-top:25px;
+	position: absolute;
+    left: 50%;
+	margin-left:-284px;
+}
+.about .about_content .about_middle .big_box{
+	position: absolute;
+	top:0px;
+	right:20px;
+}
+.about .about_content .about_middle .box1{
+	width: 238px;
+	height: 144px;
+	text-align: center;
+	border:1px #07cbc9 solid;
+	display:table;
+	margin: 25px;
+}
+.about .about_content .about_middle .box1 .box1_content{
+	display:table-cell;
+	vertical-align:middle;
+}
+.about .about_content .about_middle .box1 .box1_content span{
+	font-size:20px;
+	font-weight: 500;
+}
+.about .about_content .about_middle .left_bigbox {
+	width: 400px;
+	height:400px;
+	position:absolute;
+	top:25px;
+	left:70px;
+}
+.about .about_content .about_middle .left_bigbox .left_box1{
+	width: 170px;
+	height: 80px;
+	text-align: center;
+	padding:0 20px;
+}
+.about .about_content .about_middle .left_bigbox .left_box1 h1{
+	font-weight: 500;
+}
+.about .about_content .about_middle .left_bigbox .left_box2{
+	width: 370px;
+	height: 246px;
+	box-sizing: border-box;
+	margin: 10px;
+	padding: 20px;
+	border:1px #cdcdcd solid;
+	background-color:rgba(255,255,255,0.4);
+	z-index:3;
+}
+.about .about_content .about_middle .left_bigbox .left_box2 p{
+	height:25px;
+	line-height: 25px;
+	color: #000;
+}
+.about .about_content .about_middle .left_bigbox .left_box2 button{
+	width: 102px;
+	height: 45px;
+	margin-top: 20px;
+	color: #fff;
+	background:#000;
+	border: none;
+}
+.about .about_content .about_middle .left_bigbox .left_box2 button:hover,
+.about .about_bottom .bottom_contenter .boxx2 button:hover{
+	background: transparent;
+	border: 1px solid #000;
+	color:#000;
+}
+.about .about_bottom .bottom_contenter{
+	width: 100%;
+}
+.about .about_bottom .bottom_contenter .blk{
+	width:25%;
+	min-height:350px;
+	float: left;
+	background: #07cbc9;
+}
+.about .about_bottom .bottom_contenter div img{
+	width:100%;
+	height:350px;
+	display: block;/*设置块级消除img间的默认间隙*/
+}
+.about .about_bottom .bottom_contenter .boxx2 dl{
+	padding:20px;
+}
+.about .about_bottom .bottom_contenter .boxx2 dl dt{
+	font-size:35px;
+	font-weight:500;
+	padding: 10px 0;
+	color: #FFFFFF;
+}
+.about .about_bottom .bottom_contenter .boxx2 dl dd{
+	font-size:16px;
+	height: 30px;
+	line-height: 30px;
+	color: #EEEEEE;
+}
+.about .about_bottom .bottom_contenter .boxx2 p{
+	font-size:12px;
+	height: 20px;
+	line-height: 20px;
+	padding-left:20px;
+	color: #DDDDDD;
+}
+.about .about_bottom .bottom_contenter .boxx2 button{
+	width: 102px;
+	height: 45px;
+	color: #fff;
+	background:#000;
+	display: block;
+	margin: 0 auto;
+	border: none;
+	margin-top:20px; 
+}
+.about .about_bottom .bottom_contenter .boxx1{
+	position: relative;/*给父级设置相对定位*/
+}
+.about .about_bottom .bottom_contenter .boxx1  .arrow{
+	width: 0;
+	height:0;
+	border-style: solid;
+	border-width: 20px 30px 20px 20px;
+	border-color:transparent #07cbc9 transparent transparent;
+	position: absolute;
+	top:155px;
+	right:0px;
+}
+.about .about_bottom .bottom_contenter .boxx1  .arrow1{
+	width: 0;
+	height:0;
+	border-style: solid;
+	border-width: 20px 30px 20px 20px;
+	border-color:transparent #07cbc9 transparent transparent;
+	position: absolute;
+	top:155px;
+	left:0px;
+	transform: rotate(180deg);/*顺时针旋转180°*/
+}
+.gallery .gallery_content .gallery_big_box .box_icon{
+	width: 360px;
+	height: 304px;
+	margin:30px 0 0 30px;
+	float:left;
+	background:pink;
+}
+.gallery .gallery_content .gallery_big_box .box_icon img{
+	display:block;/*设置块级消除img间的默认间隙*/
+}
+.gallery .gallery_content .gallery_big_box .box_icon .Textbox{
+	width: 360px;
+	height:64px;
+	color: #fff;
+	line-height: 64px;
+	text-align:left;
+	text-indent: 15px;
+	background: #000;
+}
+.footer{
+	line-height: 80px;
+	color:#fff;
+	font-size: 16px;
+}

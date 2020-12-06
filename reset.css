@@ -1,0 +1,13 @@
+html,
+body{
+	background: #ffffff;
+}
+*{
+	margin:0px;
+	padding:0px;
+	font-family:"Microsoft YaHei UI";
+	/* box-sizing: border-box; */
+}
+body{
+	min-width: 700px;
+}
